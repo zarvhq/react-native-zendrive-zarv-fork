@@ -1,5 +1,5 @@
 {
-  "name": "react-native-zendrive",
+  "name": "react-native-zendrive-zarv-fork",
   "version": "7.0.0",
   "description": "React Native Zendrive SDK",
   "main": "lib/commonjs/index.js",
@@ -32,7 +32,7 @@
     "android",
     "zendrive"
   ],
-  "author": "Zendrive Inc. <developers@zendrive.com>",
+  "author": "Zarv Inc. <nathan@zarv.com>",
   "license": "MIT",
   "devDependencies": {
     "@commitlint/config-conventional": "^8.0.0",
