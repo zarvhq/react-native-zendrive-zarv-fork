@@ -1,7 +1,7 @@
 {
   "name": "react-native-zendrive-zarv-fork",
-  "version": "7.0.0",
-  "description": "React Native Zendrive SDK",
+  "version": "1.1.0",
+  "description": "React Native Zendrive SDK fork",
   "main": "lib/commonjs/index.js",
   "react-native": "lib/module/index.js",
   "module": "lib/module/index.js",
@@ -13,18 +13,7 @@
     "android"
   ],
   "scripts": {
-    "test": "yarn jest --passWithNoTests",
-    "typescript": "yarn tsc --noEmit",
-    "lint": "yarn eslint --ext .js,.ts,.tsx . && ktlint \"!**/example/**\" --android --format && cd ios && swiftlint lint && swiftlint --fix --format && cd ../example && yarn lint",
-    "release-dry-run": "source .env.sh && release-it --dry-run",
-    "release": "source .env.sh && release-it",
-    "example": "if [ -d example ]; then yarn --cwd example; fi",
-    "guides": "yarn generate-md --layout github --input ./guides --output __guides__",
-    "docs": "yarn typedoc --theme minimal --readme none --hideGenerator --out __docs__ src",
-    "prepare": "yarn bob build"
-  },
-  "publishConfig": {
-    "registry": "https://registry.npmjs.org/"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
     "react-native",
@@ -32,7 +21,7 @@
     "android",
     "zendrive"
   ],
-  "author": "Zarv Inc. <nathan@zarv.com>",
+  "author": "Zendrive Inc. <nathan@zarv.com>",
   "license": "MIT",
   "devDependencies": {
     "@commitlint/config-conventional": "^8.0.0",
@@ -77,25 +66,5 @@
     "@babel/core": "^7.20.12",
     "react": "*",
     "react-native": "*"
-  },
-  "husky": {
-    "hooks": {
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
-      "pre-commit": "yarn lint && yarn typescript && yarn test && yarn docs"
-    }
-  },
-  "@react-native-community/bob": {
-    "source": "src",
-    "output": "lib",
-    "targets": [
-      [
-        "commonjs"
-      ],
-      "module",
-      "typescript"
-    ]
-  },
-  "dependencies": {
-    "@babel/eslint-parser": "^7.19.1"
   }
 }

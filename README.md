@@ -1,4 +1,17 @@
-# react-native-zendrive-zarv-fork
- fork react-native-zendrive
+# react-native-zendrive
 
-npm install git://github.com/zarvhq/react-native-zendrive-zarv-fork.git
+## Release Notes
+
+Follow [release notes](https://react-native-zendrive-guide-v2.netlify.com/releases)
+
+## Note
+
+This is a beta release. For any issues, directly contact Zendrive support via support@zendrive.com
+
+## Integration
+
+Follow this [guide](https://react-native-zendrive-guide-v2.netlify.com/readme)
+
+## API Reference
+
+Follow this [reference](https://react-native-zendrive-api-v2.netlify.com)
